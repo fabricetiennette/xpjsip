@@ -54,10 +54,10 @@ Pod::Spec.new do |s|
   
   # ------
   #xcode 12 以上 pod lib lint 会报错
-  s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # s.pod_target_xcconfig = {
+  #     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  #   }
+  # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # ------
   
 end
